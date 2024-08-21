@@ -1,0 +1,111 @@
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 200px;
+    background-color: #ff7518;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1001;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 0.2rem;
+}
+
+.icon-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon-btn:hover {
+    color: #ffc107;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    color: #333;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transform: translateX(-100%); /* Initially hidden off-screen */
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.sidebar-open {
+    transform: translateX(0); /* Slide in when open */
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.sidebar-menu li {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-menu li:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+}
