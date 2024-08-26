@@ -92,15 +92,3 @@ function Sidebar({ setIsSidebarOpen }) {
 }
 
 export default Sidebar;
-
-{
-    /* Yangi foydalanuvchi ro'yxatdan o'tish
-oldingi sahifa
-Ommabop toifalar
-mening buyurtmam
-xarid savati
-sevimlilar
-oyoq izlari
-Karta va kupon to'plami
-Onlayn yordam */
-}

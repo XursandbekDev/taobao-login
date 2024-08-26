@@ -20,7 +20,6 @@ function LoginForm() {
             const res = await axios.get("https://fakestoreapi.com/users/1");
             const userData = res.data;
 
-            // Tel raqam va parolni tekshirish
             if (userData.phone === tel && userData.password === password) {
                 console.log("Tizimga muvaffaqiyatli kirdingiz!");
                 navigate("/home");

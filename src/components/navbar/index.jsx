@@ -21,7 +21,7 @@ function Navbar() {
                     <p>|</p>
                     <h1>Taobao</h1>
                 </div>
-                <div className="icon">
+                <div className="icon-navbar">
                     <button className="icon-btn">
                         <FiShoppingCart />
                     </button>
